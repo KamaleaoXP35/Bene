@@ -1,0 +1,25 @@
+body {
+    width: 980px;
+    height: 100%;
+    margin: 0 auto;
+    color: black;
+    margin-top: 10px;
+}
+
+.background-logo {
+    width: 980px;
+    background-color: rgb(217, 209, 224) ;
+    height: 80px;
+}
+main {
+    margin: 0 auto;
+    width: 980px;
+    position: relative;
+    
+}
+.logo {
+    padding: 0px;
+}
+.label input {
+margin-top: 10px;
+}
