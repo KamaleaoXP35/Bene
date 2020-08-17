@@ -4,44 +4,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bene</title>
+    <title>Benê</title>
     <link rel="stylesheet" type="text/css" href="./css/main.css">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+
 </head>
 
 <body>
     <header class="menu-principal">
-        <div class="background-logo">
-            <div class="logo">
-                <img src="imagens/Dolphin-100.png" alt="Imagem golfinho">
-            </div>
+        <div class="corDeFundoLogo">
         </div>
-
+        <div class="logo">
+            <img src="imagens/Dolphin-100.png" alt="Imagem golfinho">
+        </div>
+        <div>
+            <h4>Benê</h4>
+        </div>
     </header>
-    <div>
-    <h1>Exemplo de formulário para show me the leads</h1>
-    </div>
-    <form method="POST" action="https://smtl.gama.academy/leads/7f2b9630-dcac-11ea-91f1-99fb0c9231dc">
-        <label for="nomeCompleto">Digite seu nome completo</label>
-        <input name="name" type="text" pattern="^\D{2,}\s[\D\s]{2,}$" title="Digite seu nome completo" required />
-        <br />
-        <br />
-        <label for="email">Digite um email válido</label>
-        <input name="email" type="email" title="Digite um email válido" required />
-        <br />
-        <br />
-        <input name="redirectTo" type="hidden" value="https://benepravc.netlify.app/obrigado.html" />
-        <input name="debugMode" type="hidden" value="true" />
-        <input type="submit">
-    </form>
-    <div class="textoPrincipal">
-        <div class="banner">
-            <div><img src="./imagens/capa-500.png" alt="Imagem banner"></div>
-            <div><img src="./imagens/capa-500.png" alt="Imagem banner"></div>
-            <div><img src="./imagens/capa-500.png" alt="Imagem banner"></div>
+    <main>
+        <div>
+            <h1>Benefício é quando você escolhe como usar!</h1>
         </div>
-    </div>
+        <div>
+            <img src="imagens/imagem2-350.png" alt="Imagem 2">
+        </div>
+        <div>
+            <form method="POST" action="https://smtl.gama.academy/leads/7f2b9630-dcac-11ea-91f1-99fb0c9231dc">
+            <input 
+                id="inputNome"
+                name="name" 
+                placeholder="Digite seu nome completo"
+                type="text" 
+                pattern="^\D{2,}\s[\D\s]{2,}$" 
+                required />
+            <br />
+            <br />
+            <input 
+                id="inputEmail"
+                name="email" 
+                placeholder="Digite seu email"
+                type="email" 
+                required />
+            <br />
+            <br />
+            <input 
+                id="btnEnviar"
+                type="submit"
+                value="Enviar" />
 
+            <input name="redirectTo" type="hidden" value="https://benepravc.netlify.app/obrigado.html" />
+            <input name="debugMode" type="hidden" value="true" />
+            
+        </form>
+    </div>
+        <br/>
+        <br/>
+           
+    
+    </div>
+    </main>
 </body>
 
 </html>
