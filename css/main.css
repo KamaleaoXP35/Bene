@@ -1,25 +1,55 @@
-body {
-    width: 980px;
-    height: 100%;
-    margin: 0 auto;
-    color: black;
-    margin-top: 10px;
+@media (min-width: 1px) and (max-width: 320px) {
+	html,
+	body {
+		padding-bottom: 50px;
+	}
+
+	.header-img {
+		min-width: 110px;
+		max-width: 250px;
+		height: 85%;
+	}
 }
 
-.background-logo {
-    width: 980px;
-    background-color: rgb(217, 209, 224) ;
-    height: 80px;
+@media (min-width: 321px) and (max-width: 414px) {
+	html,
+	body {
+		padding-bottom: 65px;
+	}
+
+	.header-img {
+		min-width: 160px;
+		max-width: 280px;
+		height: 92%;
+	}
 }
-main {
-    margin: 0 auto;
-    width: 980px;
-    position: relative;
-    
+
+@media (min-width: 415px) {
+	.header-img {
+		min-width: 200px;
+		max-width: 300px;
+	}
+	html,
+	body {
+		padding-bottom: 65px;
+	}
 }
-.logo {
-    padding: 0px;
+
+.bg-body {
+	color: #fff;
+	font-family: "Roboto", sans-serif;
+	background: rgb(245, 159, 48);
+	background: linear-gradient(150.69deg, #f5b12d 3.74%, #f44b02 100%);
 }
-.label input {
-margin-top: 10px;
+
+.header {
+	height: 100px;
+}
+
+.header-img {
+	padding: 0.5rem 1.5rem;
+}
+
+.yellow {
+	color: #fae939;
 }

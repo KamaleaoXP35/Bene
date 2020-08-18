@@ -1,68 +1,192 @@
 <!DOCTYPE html>
-<html lang="port-br">
+<html lang="pt-br">
+	<head>
+		<title>Benê</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Benê</title>
-    <link rel="stylesheet" type="text/css" href="./css/main.css">
-    <link rel="stylesheet" type="text/css" href="./css/index.css">
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, minimum-scale=1"
+		/>
 
-</head>
+		<script
+			src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+			integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+			integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+			integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://kit.fontawesome.com/35bcd0036e.js"
+			crossorigin="anonymous"
+		></script>
 
-<body>
-    <header class="menu-principal">
-        <div class="corDeFundoLogo">
-        </div>
-        <div class="logo">
-            <img src="imagens/Dolphin-100.png" alt="Imagem golfinho">
-        </div>
-        <div>
-            <h4>Benê</h4>
-        </div>
-    </header>
-    <main>
-        <div>
-            <h1>Benefício é quando você escolhe como usar!</h1>
-        </div>
-        <div>
-            <img src="imagens/imagem2-350.png" alt="Imagem 2">
-        </div>
-        <div>
-            <form method="POST" action="https://smtl.gama.academy/leads/7f2b9630-dcac-11ea-91f1-99fb0c9231dc">
-            <input 
-                id="inputNome"
-                name="name" 
-                placeholder="Digite seu nome completo"
-                type="text" 
-                pattern="^\D{2,}\s[\D\s]{2,}$" 
-                required />
-            <br />
-            <br />
-            <input 
-                id="inputEmail"
-                name="email" 
-                placeholder="Digite seu email"
-                type="email" 
-                required />
-            <br />
-            <br />
-            <input 
-                id="btnEnviar"
-                type="submit"
-                value="Enviar" />
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+			integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+			crossorigin="anonymous"
+		/>
+		<link href="./css/main.css" rel="stylesheet" />
+		<link href="./css/index.css" rel="stylesheet" />
 
-            <input name="redirectTo" type="hidden" value="https://benepravc.netlify.app/obrigado.html" />
-            <input name="debugMode" type="hidden" value="true" />
-            
-        </form>
-    </div>
-        <br/>
-        <br/>
-           
-    
-    </div>
-    </main>
-</body>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body class="bg-body">
+		<div class="container-fluid">
+			<header>
+				<div class="row header">
+					<img
+						src="./imagens/marca_bene_horizontal_negativo.png"
+						alt="Logo do bene"
+						class="header-img"
+					/>
+				</div>
+			</header>
 
+			<main>
+				<div id="main-block" class="row mt-2">
+					<div class="col-lg-6 col-sm-12 img-main"></div>
+					<div class="col-lg-6 col-sm-12">
+						<div class="row-title">
+							<p>
+								SUPERE AS BARREIRAS DO
+								<label class="yellow">HOME OFFICE</label>
+								<br />E GARANTA O <label class="yellow">ENGAJAMENTO</label> E
+								<label class="yellow">ALTA</label> <br /><label class="yellow">
+									PRODUTIVIDADE</label
+								>
+								DA SUA EQUIPE
+							</p>
+						</div>
+						<div class="row-subtitle">
+							<p>
+								Acompanhe sua equipe e transforme o
+								<br />ambiente virtual de trabalho
+							</p>
+						</div>
+						<div class="row row-img">
+							<div class="col-md-4 col-sm-12">
+								<img
+									src="./imagens/img-1.png"
+									alt="Pesquinsando informações da empresa"
+								/>
+							</div>
+							<div class="col-md-4 col-sm-12">
+								<img
+									src="./imagens/img-2.png"
+									alt="Medindo o desempenho da empresa"
+								/>
+							</div>
+							<div class="col-md-4 col-sm-12">
+								<img
+									src="./imagens/img-3.png"
+									alt="Classificação de benefícios"
+								/>
+							</div>
+						</div>
+						<div class="row mt-3">
+							<a
+								href="#form-block"
+								data-aos="fade-down"
+								class="btn btn-outline-warning btn-download"
+								>BAIXE O SEU KIT AGORA!</a
+							>
+						</div>
+					</div>
+				</div>
+
+				<div id="form-block" class="row mt-5">
+					<div class="col-lg-6 col-sm-12 explain-text">
+						<h5 class="explain-text-title">Como nosso kit pode te ajudar?</h5>
+						<p>
+							Com a chegada da pandemia, o dia a dia das empresas e as relações
+							interpessoais mudaram. Muitos colaboradores estão com baixo
+							desempenho e isso é reflexo da falta de motivação. Mas fique
+							tranquilo! Nosso kit pode te ajudar. Com ele, você irá aprender de
+							forma simples e prática a gerenciar o seu time nessa nova fase,
+							através de ferramentas e metodologias inovadoras e assertivas.
+							Como?
+						</p>
+						<p>
+							<i class="far fa-check-square"></i>
+							<label>
+								Através de uma pesquisa de clima, que facilitará o mapeamento
+								dos problemas e onde agir para saná-los
+							</label>
+						</p>
+						<p>
+							<i class="far fa-check-square"></i> Uma avaliação de desempenho
+							para mensurar a performance da equipe e estimular a produtividade
+							dos colaboradores mesmo em home office
+						</p>
+						<p>
+							<i class="far fa-check-square"></i> Lista de benefícios que te
+							mostrará como deixar seus colaboradores mais satisfeitos com a
+							autonomia de escolher onde e como gastar seus benefícios
+						</p>
+					</div>
+					<div class="col-lg-6 col-xs-12 vertical-center">
+						<div class="formulario">
+							<div class="row formulario-header">
+								<p>Preencha o formulário para receber o Kit</p>
+							</div>
+							<div class="row formulario-body">
+								<form
+									method="POST"
+									action="https://smtl.gama.academy/leads/7f2b9630-dcac-11ea-91f1-99fb0c9231dc"
+									class="form"
+								>
+									<div class="form-group text-center">
+										<input
+											name="name"
+											type="text"
+											pattern="^\D{2,}\s[\D\s]{2,}$"
+											title="Digite seu nome completo"
+											required
+											placeholder="Nome completo"
+											class="formulario-input"
+										/>
+									</div>
+									<div class="form-group text-center">
+										<input
+											name="email"
+											type="email"
+											title="Digite um email válido"
+											required
+											placeholder="E-mail"
+											class="formulario-input"
+										/>
+									</div>
+									<input
+										name="redirectTo"
+										type="hidden"
+										value="https://benepravc.netlify.app/pages/ThankyouPage.html"
+									/>
+									<input name="debugMode" type="hidden" value="true" />
+									<div class="form-group text-center">
+										<input
+											type="submit"
+											class="btn formulario-btn"
+											value="Baixar kit grátis agora"
+										/>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+		</div>
+	</body>
 </html>

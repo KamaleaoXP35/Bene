@@ -1,0 +1,12 @@
+#main-block{
+    height: 100vh;
+}
+
+#form-block{
+    height: 100vh; 
+}
+
+.img-main {
+    background-image: url(../imagens/bene_benefícios_2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
