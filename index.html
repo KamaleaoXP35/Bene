@@ -8,7 +8,6 @@
 			content="width=device-width, initial-scale=1, minimum-scale=1"
 		/>
 
-		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script
 			async
 			src="https://www.googletagmanager.com/gtag/js?id=UA-175742273-1"
@@ -22,6 +21,8 @@
 
 			gtag("config", "UA-175742273-1");
 		</script>
+
+		<script src="./js/funcoes.js"></script>
 		<script
 			src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
 			integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -62,7 +63,7 @@
 				<div class="row header">
 					<img
 						src="./imagens/marca_bene_horizontal_negativo.png"
-						alt="Logo do bene"
+						alt="Benê"
 						class="header-img"
 					/>
 				</div>
@@ -77,16 +78,14 @@
 								SUPERE AS BARREIRAS DO
 								<label class="yellow">HOME OFFICE</label>
 								E GARANTA O <label class="yellow">ENGAJAMENTO</label> E
-								<label class="yellow">ALTA</label> <label class="yellow">
-									PRODUTIVIDADE</label
-								>
+								<label class="yellow">ALTA</label>
+								<label class="yellow"> PRODUTIVIDADE</label>
 								DA SUA EQUIPE
 							</p>
 						</div>
 						<div class="row-subtitle">
 							<p>
-								Acompanhe sua equipe e transforme o
-								ambiente virtual de trabalho
+								Acompanhe sua equipe e transforme o ambiente virtual de trabalho
 							</p>
 						</div>
 						<div class="row row-img">
@@ -110,10 +109,7 @@
 							</div>
 						</div>
 						<div class="row mt-3">
-							<a
-								href="#form-block"
-								data-aos="fade-down"
-								class="btn btn-outline-warning btn-download"
+							<a href="#form-block" class="btn btn-outline-warning btn-download"
 								>BAIXE O SEU KIT AGORA!</a
 							>
 						</div>
@@ -191,6 +187,7 @@
 									<div class="form-group text-center">
 										<input
 											type="submit"
+											onclick="downloadKit()"
 											class="btn formulario-btn"
 											value="Baixar kit grátis agora"
 										/>
