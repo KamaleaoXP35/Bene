@@ -103,13 +103,14 @@
 			crossorigin="anonymous"
 		/>
 		<link href="./css/main.css" rel="stylesheet" />
-		<link href="./css/index.css" rel="stylesheet" />
+		<link href="./css/newsletter.css" rel="stylesheet" />
 
 		<link
 			href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
 			rel="stylesheet"
 		/>
 	</head>
+
 	<body class="bg-body">
 		<div class="container-fluid">
 			<header>
@@ -124,89 +125,27 @@
 
 			<main>
 				<div id="main-block" class="row mt-2">
-					<div class="col-lg-6 col-sm-12 img-main"></div>
-					<div class="col-lg-6 col-sm-12">
+					<div class="col-lg-7 col-sm-12">
 						<div class="row-title">
 							<p>
-								SUPERE AS BARREIRAS DO
-								<label class="yellow">HOME OFFICE</label>
-								E GARANTA O <label class="yellow">ENGAJAMENTO</label> E
-								<label class="yellow">ALTA</label>
-								<label class="yellow"> PRODUTIVIDADE</label>
-								DA SUA EQUIPE
+								Acreditamos no
+								<label class="yellow">ganha-ganha</label> entre empregado e
+								empregador. Sabemos que o seu bem-estar é necessário para um
+								<label class="yellow">bom desempenho</label> e uma
+								<label class="yellow">boa qualidade de vida.</label>
 							</p>
-						</div>
-						<div class="row-subtitle">
 							<p>
-								Acompanhe sua equipe e transforme o ambiente virtual de trabalho
+								Para receber conteúdos semanais com assuntos importantes para
+								uma vida profissional mais balanceada, preencha o formulário e
+								se increva em nosso newsletter!
+								<br /><br /><label class="yellow">Vamos juntos?</label>
 							</p>
 						</div>
-						<div class="wrapper">
-							<div class="row row-img">
-								<div class="col-md-4 col-sm-12">
-									<img
-										src="./imagens/img-1.png"
-										alt="Pesquinsando informações da empresa"
-									/>
-								</div>
-								<div class="col-md-4 col-sm-12">
-									<img
-										src="./imagens/img-2.png"
-										alt="Medindo o desempenho da empresa"
-									/>
-								</div>
-								<div class="col-md-4 col-sm-12">
-									<img
-										src="./imagens/img-3.png"
-										alt="Classificação de benefícios"
-									/>
-								</div>
-							</div>
-							<div class="row mt-3 row-btn">
-								<a
-									href="#formulario"
-									class="btn btn-outline-warning btn-download"
-									>BAIXE O SEU KIT AGORA!</a
-								>
-							</div>
-						</div>
 					</div>
-				</div>
-
-				<div id="form-block" class="row mt-5">
-					<div class="col-lg-6 col-sm-12 explain-text">
-						<h5 class="explain-text-title">Como nosso kit pode te ajudar?</h5>
-						<p>
-							Com a chegada da pandemia, o dia a dia das empresas e as relações
-							interpessoais mudaram. Muitos colaboradores estão com baixo
-							desempenho e isso é reflexo da falta de motivação. Mas fique
-							tranquilo! Nosso kit pode te ajudar. Com ele, você irá aprender de
-							forma simples e prática a gerenciar o seu time nessa nova fase,
-							através de ferramentas e metodologias inovadoras e assertivas.
-							Como?
-						</p>
-						<p>
-							<i class="far fa-check-square"></i>
-							<label>
-								Através de uma pesquisa de clima, que facilitará o mapeamento
-								dos problemas e onde agir para saná-los
-							</label>
-						</p>
-						<p>
-							<i class="far fa-check-square"></i> Uma avaliação de desempenho
-							para mensurar a performance da equipe e estimular a produtividade
-							dos colaboradores mesmo em home office
-						</p>
-						<p>
-							<i class="far fa-check-square"></i> Lista de benefícios que te
-							mostrará como deixar seus colaboradores mais satisfeitos com a
-							autonomia de escolher onde e como gastar seus benefícios
-						</p>
-					</div>
-					<div class="col-lg-6 col-xs-12 vertical-center">
+					<div class="col-lg-5 col-sm-12">
 						<div id="formulario" class="formulario">
 							<div class="row formulario-header">
-								<p>Preencha o formulário para receber o Kit</p>
+								<p>Assine nossa newsletter</p>
 							</div>
 							<div class="row formulario-body">
 								<form
@@ -235,18 +174,12 @@
 											class="formulario-input"
 										/>
 									</div>
-									<input
-										name="redirectTo"
-										type="hidden"
-										value="https://benepravc.netlify.app/pages/ThankyouPage.html"
-									/>
-									<!-- <input name="debugMode" type="hidden" value="true" /> -->
 									<div class="form-group text-center">
 										<input
 											type="submit"
-											onclick="downloadKit()"
+											onclick="assinarNewsletter()"
 											class="btn formulario-btn"
-											value="Baixar kit grátis agora"
+											value="ASSINAR NEWSLETTER"
 										/>
 									</div>
 								</form>
@@ -255,6 +188,40 @@
 					</div>
 				</div>
 			</main>
+
+			<div class="float-button">
+				<a href="#formulario">
+					<i class="fas fa-arrow-down"></i>
+				</a>
+			</div>
+
+			<footer class="mt-5">
+				<div class="row" style="width: 100%;">
+					<div class="col-lg-6 col-sm-12 sociais">
+						<div class="row sociais-row">
+							<span>Somos sociais</span>
+						</div>
+						<div class="row sociais-row-2">
+							<a href="https://www.instagram.com/benepravoce/">
+								<img src="./imagens/rs_insta.png" alt="Link Instagran" />
+							</a>
+							<a href="https://www.facebook.com/Ben%C3%AA-252449255864895">
+								<img src="./imagens/rs_face.png" alt="Link Facebook" />
+							</a>
+							<a href="https://www.linkedin.com/company/68995786/admin/">
+								<img src="./imagens/rs_linkedin.png" alt="Link linkedin" />
+							</a>
+						</div>
+					</div>
+					<div class="col-lg-6 col-sm-12 slogan-row">
+						<img
+							src="./imagens/marca_beneslogan_negativo.png"
+							alt="Benê slogan, Benefício é qunado você escolhe como usar"
+							class="slogan"
+						/>
+					</div>
+				</div>
+			</footer>
 		</div>
 	</body>
 </html>

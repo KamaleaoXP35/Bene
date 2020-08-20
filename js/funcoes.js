@@ -29,3 +29,7 @@ function copyToClipboard(str) {
     document.execCommand('copy');
     document.body.removeChild(el);
 };
+
+function assinarNewsletter() {
+    alert("Obrigado por assinar!")
+}
