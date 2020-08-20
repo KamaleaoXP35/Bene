@@ -31,5 +31,16 @@ function copyToClipboard(str) {
 };
 
 function assinarNewsletter() {
-    alert("Obrigado por assinar!")
+    var nome = document.getElementsByName('name')[0].value;
+    var email = document.getElementsByName('email')[0].value;
+
+    const regexNome = /^\D{2,}\s[\D\s]{2,}$/;
+    const regexEmail = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+    const isValidNome = regexNome.test(nome.toLowerCase());
+    const isValidEmail = regexEmail.test(email.toLowerCase());
+
+    if (isValidNome && isValidEmail) {
+        alert("Obrigado por assinar!")
+    }
 }
